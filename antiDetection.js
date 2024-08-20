@@ -1,12 +1,14 @@
-const token = ""; // put ur token in the quotes
-const channelid = ""; // put the channel id you want to fish in
+const config = require('./config.js');
+
+const token = config.token;
+const channelid = config.channelId;
 
 const { Client, version } = require('discord.js-selfbot-v13');
 const client = new Client();
 const fishbotId = '574652751745777665';
 
 client.once('ready', async () => {
-  console.log(`account: ${client.user.username}`);
+  console.log(`Started anti detection on ${client.user.username}`);
 })
 
 client.on('messageCreate', message => {
