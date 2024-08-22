@@ -3,6 +3,8 @@ This is an auto fisher for the Virtual Fisher Discord bot
 
 This uses [Discord.js Selfbot](https://github.com/aiko-chan-ai/discord.js-selfbot-v13)
 
+This breaks a lot and I found there isn't much work arounds for my coding capabilities so I'm most likely going to rewrite this soon with another language and modules.
+
 > [!CAUTION]
 > This bot can get detected occasionally for automation by Virtual Fisher. You should also be careful using Discord self-bot as they are against Discord's TOS
 
