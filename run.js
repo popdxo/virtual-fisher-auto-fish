@@ -3,6 +3,11 @@ const { spawn } = require('child_process');
 const autoFish = spawn('node', ['autoFish.js']);
 const antiDetection = spawn('node', ['antiDetection.js']);
 
+function startAutoFish () {
+    autoFish.stdout.on('data', (data) =>
+        console.log(`:${data}`)
+    )
+}
 autoFish.stdout.on('close', (code) => {
     console.log(`autofish killed itself again. crazy. ${code}`);
     startAutoFish();
